@@ -5,10 +5,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home";
 import Dashboard from "./Dashboard";
 import Login from "./login";
+import Pesan from "./Pesan";
+import Tiket from "./Tiket";
 
 const homeLoader = () => import("./Home");
 const dashboardLoader = () => import("./Dashboard");
 const loginLoader = () => import("./login");
+const pesanLoader = () => import("./Pesan");
+const tiketLoader = () => import("./Tiket");
 
 const router = createBrowserRouter([
   {
@@ -25,6 +29,16 @@ const router = createBrowserRouter([
     path: "login",
     element: <Login />,
     loader: loginLoader,
+  },
+  {
+    path: "pesan",
+    element: <Pesan />,
+    loader: pesanLoader,
+  },
+  {
+    path:"tiket",
+    element: <Tiket />,
+    loader: tiketLoader,
   },
 ]);
 

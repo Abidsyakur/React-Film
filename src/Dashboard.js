@@ -65,8 +65,10 @@ const Dashboard = () => {
       <div style={cardContainerStyle}>
         {Array.from({ length: 9 }).map((_, idx) => (
           <div key={idx} style={cardStyle}>
+            <a href='./pesan' style={{textDecoration:'none',color:'black'}}>
             <h3>Film {idx + 1}</h3>
             <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </a>
           </div>
         ))}
       </div>
