@@ -4,15 +4,17 @@ import * as ReactDOM from "react-dom";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home";
 import Dashboard from "./Dashboard";
-import Login from "./login";
+import Login from "./Login";
 import Pesan from "./Pesan";
 import Tiket from "./Tiket";
 
 const homeLoader = () => import("./Home");
 const dashboardLoader = () => import("./Dashboard");
-const loginLoader = () => import("./login");
+const loginLoader = () => import("./Login");
 const pesanLoader = () => import("./Pesan");
 const tiketLoader = () => import("./Tiket");
+
+
 
 const router = createBrowserRouter([
   {

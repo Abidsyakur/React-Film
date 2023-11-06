@@ -1,6 +1,6 @@
-import React from 'react';
-
-const Pesan = () => {
+ import React  from "react";
+ 
+ const Pesan = () => {
   const backgroundStyle = {
     backgroundColor:'black',
     backgroundSize: 'cover',

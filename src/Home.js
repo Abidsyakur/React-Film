@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Home = () => {
   const BackgroundStyle = {
@@ -32,7 +32,7 @@ const Home = () => {
       <div className="d-flex flex-column align-items-center" style={{ height: '80vh', justifyContent: 'center' }}>
         <h2 style={titleStyle}>SELAMAT DATANG  DI NONTON KUY</h2>
         <div className="mt-4">
-          <a href="/login">
+          <a href="login">
             <button type="button" className="btn btn-danger btn-lg"  style={buttonStyle}>
               ORDER TIKET KUY
             </button>
