@@ -23,7 +23,7 @@ const Login = () => {
 
   const inputStyle = {
     width: '100%',
-    marginBottom: '20px',
+    marginBottom: '20px', 
     padding: '10px',
     boxSizing: 'border-box',
   };
@@ -53,7 +53,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/customer/store', formData);
+      const response = await axios.post('http://localhost:3001/api/customer/store', formData);
       console.log(response.data);
       // Tambahkan logika penanganan respons di sini
     } catch (error) {
@@ -84,7 +84,7 @@ const Login = () => {
         />
         <input
           style={inputStyle}
-          type="gmail"
+          type="email"
           name="email"
           placeholder="Email"
           value={formData.email}
