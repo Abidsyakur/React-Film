@@ -1,8 +1,9 @@
 import React from "react";
 
+
 const TiketFilm = () => {
   const tiketStyle = {  
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     width: '60%',
     height: '300px',
     border: '2px solid #E50914',
@@ -21,6 +22,7 @@ const TiketFilm = () => {
   };
 
   const contentStyle = {
+    color:'white',
     width: '60%',
     display: 'flex',
     flexDirection: 'column',
@@ -54,7 +56,7 @@ const TiketFilm = () => {
           <img src="https://via.placeholder.com/150" alt="film poster" style={{ width: '80%' }} />
         </div>
         <div style={contentStyle}>
-          <h2 style={{ color: '#E50914', margin: '10px 0' }}>{filmInfo.title}</h2>
+          <h2 style={{ color: 'white', margin: '10px 0' }}>{filmInfo.title}</h2>
           <hr style={{ margin: '10px 0', borderColor: '#E50914' }} />
           <p style={{ margin: '10px 0' }}>Nomor Kursi: {filmInfo.seatNumber}</p>
           <hr style={{ margin: '20px 0', borderColor: '#E50914' }} />
